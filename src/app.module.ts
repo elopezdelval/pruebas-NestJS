@@ -7,7 +7,7 @@ import { Usuario } from './users/users.structure';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'better-sqlite3',
+      type: 'sqlite',
       database: 'usuarios.sqlite', 
       entities: [Usuario],
       synchronize: true,
